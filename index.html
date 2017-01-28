@@ -4,9 +4,176 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<!-- 1. Заголовок header - основная шапка сайта + класс main_header -->
+    <header class="main_header">
+<div class="container"> <!--div-Центровщик содержимого шапки container -->
+
+  <div class="index_logo"> <!--Устройство Логотипа -->
+    <img src="img/index_logo.png" width="20" height="20" alt="Логотип Нёрдс">
+  </div> <!--Закрытие Логотипа -->
+
+  <nav class="main_navigation"> <!--Меню навигации шапки -->
+    <ul>
+<li><a href="#">СТУДИЯ</a></li>
+<li><a href="#">КЛИЕНТЫ</a></li>
+<li><a href="#">МАГАЗИН</a></li>
+<li><a href="#">КОНТАКТЫ</a></li>
+    </ul> <!--Закрытие Списка Меню навигации шапки -->
+    </nav> <!--Закрытие Меню навигации шапки -->
+
+  <div class="user_block"> <!--Ссылка Корзина -->
+    <a class="login" href="#">КОРЗИНА</a>
+</div> <!--Закрытие Корзины -->
+
+</div> <!--Закрытие центровщика шапки container -->
+    </header> <!--Закрытие шапки header main -->
+
+<!-- 2. main - уникальное содержание страницы + центровщик container -->
+<main class="container">
+
+<!-- 2.1 Предлагаемые услуги Products -->
+<section class="Products">
+
+  <div class="Products_item"> <!--Первый товар -->
+    <h3>ВЕБ-САЙТЫ</h3>
+
+      <!--Вставка картинки ссылки websites.png на страницу и
+               Привязка второй страницы макета "Каталог"
+                  к картинке-ссылке websites.png -->
+    <a href="nerds-catalog.html">
+    <img src="img/websites.png" width="20" height="15" alt="Веб-сайты">
+    </a>
+
+    <p>Мир никогда не будет прежним после того как увидит наш сайт!</p>
+    <a class="btn" href="#">ЗАКАЗАТЬ</a>
+
+  </div> <!--Закрытие первого товара -->
+
+  <div class="Products_item"> <!--Второй товар -->
+    <h3>ПРИЛОЖЕНИЯ</h3>
+    <img src="img/applications.png" width="20" height="15" alt="Приложения">
+        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        <a class="btn" href="#">ЗАКАЗАТЬ</a>
+  </div> <!--Закрытие второго товара -->
+
+  <div class="Products_item"> <!--Третий товар -->
+    <h3>ПРЕЗЕНТАЦИИ</h3>
+    <img src="img/presentations.png" width="20" height="15" alt="Презентации">
+    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+    <a class="btn" href="#">ЗАКАЗАТЬ</a>
+  </div> <!--Закрытие третьего товара -->
+
+</section> <!--Закрытие блока с товарами -->
+
+
+<!-- 2.2 СамоРеклама Presentation -->
+<section>
+<div class="Presentation">
+
+  <div class="Presentation_LeftSide"> <!--Часть слева -->
+  <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+  <br>
+  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы</p>
+  <br>
+  <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
+<p>Веб-сайтов любой сложности</p>
+<p>Мобильных приложений для iOS и Android</p>
+<p>Слайдшоу и видео для корпоративных презентаций</p>
+  </div> <!--Закрытие презентации слева -->
+
+  <div class="Presentation_RightSide"> <!--Часть справа -->
+
+    <div class="index_logo"> <!--Устройство второго Логотипа -->
+      <img src="img/index_logo2.png" width="30" height="30" alt="Логотип Нёрдс 2">
+    </div> <!--Закрытие второго Логотипа -->
+
+<!--Таблица с процентами -->
+<table>
+            <tr>
+                <th colspan="3">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ:</th>
+        <!--    <th>..</th>
+                <th>..</th>
+        -->
+            </tr>
+            <tr>
+                <td>146<sup>%</sup></td>
+                <td>100<sup>%</sup></td>
+                <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+        </table>
+
+
+  </div> <!--Закрытие презентации справа -->
+
+</div> <!--Закрытие саморекламы -->
+</section>
+
+<!-- 2.3 Блок Партнёры Partners -->
+<section>
+
+  <div class="partner_logo"> <!--Партнёр html-academy -->
+    <img src="img/index_part_logo_htmlac.png" width="30" height="30" alt="html academy">
+  </div> <!--Закрытие партнёра  html-academy -->
+
+  <div class="partner_logo"> <!--Партнёр Barbershop BORODINSKI -->
+    <img src="img/index_part_logo_barbshop.png" width="30" height="30" alt="Barbershop BORODINSKI">
+  </div> <!--Закрытие партнёра  Barbershop BORODINSKI -->
+
+  <div class="partner_logo"> <!--Партнёр glasses PINK -->
+    <img src="img/index_part_logo_glasses_PINK.png" width="30" height="30" alt="glasses PINK">
+  </div> <!--Закрытие партнёра  glasses PINK -->
+
+  <div class="partner_logo"> <!--Партнёр MiSHKA -->
+    <img src="img/index_part_logo_MiSHKA.png" width="30" height="30" alt="MiSHKA">
+  </div> <!--Закрытие партнёра  MiSHKA -->
+
+</section> <!--Закрытие секции партнёров -->
+
+</main> <!--Закрытие main -->
+
+<!-- 3 Блок контакты Contacts + карта Map -->
+<section>
+
+<div class="Contacts">
+  <h4>NЁRDS DESIGN STUDIO</h4>
+<br>
+  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+<br>
+<p>тел. +7(812) 275-75-75</p>
+<br>
+  <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+</div> <!--Закрытие блока контактов -->
+</section><!--Закрытие секции контактов -->
+
+
+
+    <!-- 3. Подвал footer - основной подвал сайта + класс main_footer -->
+<footer class="main_footer">
+    <div class="container"> <!--div-Центровщик содержимого подвала container -->
+<div class="social">
+
+          <!--Ссылки на соцсети -->
+          <!--Пиктограмма - фон. Текст будет скрыт css -->
+  <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+  <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+  <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+
+          <!--Рекламный слоган -->
+<b class="footer_slogan">Давайте дружить, это выгодно!</b>
+<p>Скидка 10% для друзей из социальных сетей.</p>
+
+</div> <!--Закрытие социального блока подвала -->
+
+   </div> <!--Закрытие центровщика основного подвала container -->
+</footer>
 
   </body>
 </html>
