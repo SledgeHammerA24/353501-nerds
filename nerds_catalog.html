@@ -4,212 +4,211 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-
   <body>
 
-    <!-- 1. Заголовок header - основная шапка сайта + класс main_header -->
-    <header class="main_header">
-      <div class="container"> <!--div-Центровщик содержимого шапки container -->
+  <!-- 1. Заголовок header - основная шапка сайта + класс main_header -->
+  <header class="main_header">
+    <div class="container"> <!--div-Центровщик содержимого шапки container -->
 
-        <!-- 1.1 Устройство Логотипа и ссылки на заглавную страницу при клике на логотип-->
-        <div class="index_logo">
-          <a href="../index.html">
-            <img src="img/index_logo.png" width="20" height="20" alt="Логотип Нёрдс">
-          </a>
-        </div> <!--Закрытие Логотипа -->
+      <!-- 1.1 Устройство Логотипа и ссылки на заглавную страницу при клике на логотип-->
+      <div class="index_logo">
+        <a href="../index.html">
+          <img src="img/index_logo.png" width="20" height="20" alt="Логотип Нёрдс">
+        </a>
+      </div> <!--Закрытие Логотипа -->
 
-        <!-- 1.2 Меню навигации шапки -->
-        <nav class="main_navigation">
+     <!-- 1.2 Меню навигации шапки -->
+     <nav class="main_navigation">
+       <ul>
+         <li><a href="#">СТУДИЯ</a></li>
+         <li><a href="#">КЛИЕНТЫ</a></li>
+         <li><a href="#">МАГАЗИН</a></li>
+         <li><a href="#">КОНТАКТЫ</a></li>
+       </ul> <!--Закрытие Списка Меню навигации шапки -->
+     </nav> <!--Закрытие Меню навигации шапки -->
+
+     <!-- 1.3 Ссылка Корзина -->
+     <div class="user_block">
+       <a class="login" href="#">КОРЗИНА</a>
+     </div> <!--Закрытие Корзины -->
+
+   </div> <!--Закрытие центровщика шапки container -->
+ </header> <!--Закрытие шапки header main -->
+
+  <!-- 2. Раздел main - уникальное содержание страницы + центровщик container -->
+  <main class="container">
+
+    <!-- 2.1 Заголовок страницы -->
+    <h1>Магазин готовых шаблонов</h1>
+
+    <!-- 2.2 Сортировка "по цене", "по типу", "по названию" Selection -->
+    <section class="Selection">
+
+      <div class="Selection">
+        <h3>СОРТИРОВАТЬ:</h3>
+        <ul>
+          <li><a href="#">ПО ЦЕНЕ</a></li>
+          <li><a href="#">ПО ТИПУ</a></li>
+          <li><a href="#">ПО НАЗВАНИЮ</a></li>
+          <li><a href="#">ПО УБЫВАНИЮ</a></li>
+          <li><a href="#">ПО ВОЗРАСТАНИЮ</a></li>
+        </ul> <!--Закрытие Списка Сортировки -->
+      </div> <!--Закрытие Блока Сортировки -->
+    </section class="Selection"> <!--Закрытие Секции Сортировки -->
+
+    <!-- 2.3 Ценовой бегунок и фильтры "Сетка" "Особенности", кнопка "ПОКАЗАТЬ" -->
+    <section class="Filters">
+
+      <!-- 2.3.2 фильтры "Сетка" "Особенности" кнопка "ПОКАЗАТЬ" в виде формы -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+
+        <div class="Price_Filter"> <!-- 2.3.1 Ценовой бегунок -->
+          <h3>СТОИМОСТЬ:</h3>
+        </div> <!--Закрытие Ценового бегунка -->
+
+        <div class="Pattern_Form"> <!-- 2.3.2.1 фильтр "Сетка" в виде формы радиобаттонов -->
+          <h3>СЕТКА:</h3>
           <ul>
-            <li><a href="#">СТУДИЯ</a></li>
-            <li><a href="#">КЛИЕНТЫ</a></li>
-            <li><a href="#">МАГАЗИН</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul> <!--Закрытие Списка Меню навигации шапки -->
-        </nav> <!--Закрытие Меню навигации шапки -->
+            <li>
+              <label>
+                <input type="radio" name="Features" value="Адаптивная" checked>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="Features" value="Фиксированная">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="Features" value="Резиновая">
+              </label>
+            </li>
+          </ul> <!--Закрытие Списка фильтра Сетка -->
+        </div> <!--Закрытие Блока фильтр "Сетка" -->
+        <br>
 
-        <!-- 1.3 Ссылка Корзина -->
-        <div class="user_block">
-          <a class="login" href="#">КОРЗИНА</a>
-        </div> <!--Закрытие Корзины -->
+        <div class="Particularity_Form"> <!-- 2.3.2.2 фильтр "Особенности" в виде формы чекбоксов -->
+          <h3>ОСОБЕННОСТИ:</h3>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="slider" id="slider-field" checked>
+                <label for="slider-field">Слайдер</label>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="advantages" id="advantages-field">
+                <label for="advantages-field">Блок преимуществ</label>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="news" id="news-field" checked>
+                <label for="news-field">Новости</label>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="gallery" id="gallery-field" checked>
+                <label for="gallery-field">Галерея</label>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="bascket" id="bascket-field">
+                <label for="bascket-field">Корзина</label>
+              </label>
+            </li>
+          </ul> <!--Закрытие Списка фильтра Особенности -->
+        </div> <!--Закрытие Блока фильтр "Особенности" -->
+        <br>
+        <input type="submit" value="ПОКАЗАТЬ"> <!-- 2.3.2.3 кнопка "ПОКАЗАТЬ" в виде формы -->
 
-      </div> <!--Закрытие центровщика шапки container -->
-     </header> <!--Закрытие шапки header main -->
+      </form>
 
-     <!-- 2. Раздел main - уникальное содержание страницы + центровщик container -->
-     <main class="container">
-
-       <!-- 2.1 Заголовок страницы -->
-       <h1>Магазин готовых шаблонов</h1>
-
-       <!-- 2.2 Сортировка "по цене", "по типу", "по названию" Selection -->
-       <section class="Selection">
-
-         <div class="Selection">
-           <h3>СОРТИРОВАТЬ:</h3>
-           <ul>
-             <li><a href="#">ПО ЦЕНЕ</a></li>
-             <li><a href="#">ПО ТИПУ</a></li>
-             <li><a href="#">ПО НАЗВАНИЮ</a></li>
-             <li><a href="#">ПО УБЫВАНИЮ</a></li>
-             <li><a href="#">ПО ВОЗРАСТАНИЮ</a></li>
-           </ul> <!--Закрытие Списка Сортировки -->
-         </div> <!--Закрытие Блока Сортировки -->
-       </section class="Selection"> <!--Закрытие Секции Сортировки -->
-
-       <!-- 2.3 Ценовой бегунок и фильтры "Сетка" "Особенности", кнопка "ПОКАЗАТЬ" -->
-       <section class="Filters">
-
-         <!-- 2.3.2 фильтры "Сетка" "Особенности" кнопка "ПОКАЗАТЬ" в виде формы -->
-         <form action="https://echo.htmlacademy.ru" method="get">
-
-          <div class="Price_Filter">  <!-- 2.3.1 Ценовой бегунок -->
-            <h3>СТОИМОСТЬ:</h3>
-          </div> <!--Закрытие Ценового бегунка -->
-
-          <div class="Pattern_Form">  <!-- 2.3.2.1 фильтр "Сетка" в виде формы радиобаттонов -->
-            <h3>СЕТКА:</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="Features" value="Адаптивная" checked>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="Features" value="Фиксированная">
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="Features" value="Резиновая">
-                </label>
-              </li>
-            </ul> <!--Закрытие Списка фильтра Сетка -->
-          </div> <!--Закрытие Блока фильтр "Сетка" -->
-          <br>
-
-           <div class="Particularity_Form">  <!-- 2.3.2.2 фильтр "Особенности" в виде формы чекбоксов -->
-            <h3>ОСОБЕННОСТИ:</h3>
-             <ul>
-              <li>
-               <label>
-                 <input type="checkbox" name="slider" id="slider-field" checked>
-                 <label for="slider-field">Слайдер</label>
-               </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="advantages" id="advantages-field">
-                  <label for="advantages-field">Блок преимуществ</label>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="news" id="news-field" checked>
-                  <label for="news-field">Новости</label>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="gallery" id="gallery-field" checked>
-                  <label for="gallery-field">Галерея</label>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="bascket" id="bascket-field">
-                  <label for="bascket-field">Корзина</label>
-                </label>
-              </li>
-            </ul> <!--Закрытие Списка фильтра Особенности -->
-           </div> <!--Закрытие Блока фильтр "Особенности" -->
-           <br>
-           <input type="submit" value="ПОКАЗАТЬ"> <!-- 2.3.2.3 кнопка "ПОКАЗАТЬ" в виде формы -->
-
-         </form>
-
-       </section class="Filters"> <!--Закрытие Секции Фильтров -->
+    </section> <!--Закрытие Секции Фильтров -->
 
 
     <!-- 2.4 Образцы товара Samples -->
-       <section class="Samples">
+    <section class="Samples">
 
-         <article class="Samples_item"> <!--Первый товар -->
-           <img src="img/sedona.png" width="20" height="15" alt="Sedona">
-         </article> <!--Закрытие первого товара -->
+      <article class="Samples_item"> <!--Первый товар -->
+        <img src="img/sedona.png" width="20" height="15" alt="Sedona">
+      </article> <!--Закрытие первого товара -->
 
-         <article class="Samples_item"> <!--Второй товар -->
-           <img src="img/pink.png" width="20" height="15" alt="Pink">
-         </article> <!--Закрытие второго товара -->
+      <article class="Samples_item"> <!--Второй товар -->
+        <img src="img/pink.png" width="20" height="15" alt="Pink">
+      </article> <!--Закрытие второго товара -->
 
-         <article class="Samples_item"> <!--Третий товар -->
-           <img src="img/borodinski.png" width="20" height="15" alt="Barbershop">
-         </article> <!--Закрытие третьего товара -->
+      <article class="Samples_item"> <!--Третий товар -->
+        <img src="img/borodinski.png" width="20" height="15" alt="Barbershop">
+      </article> <!--Закрытие третьего товара -->
 
-         <article class="Samples_item"> <!--Четвёртый товар -->
-           <img src="img/mishka.png" width="20" height="15" alt="Mishka">
-         </article> <!--Закрытие Четвёртого товара -->
+      <article class="Samples_item"> <!--Четвёртый товар -->
+        <img src="img/mishka.png" width="20" height="15" alt="Mishka">
+      </article> <!--Закрытие Четвёртого товара -->
 
-         <article class="Samples_item"> <!--Пятый товар -->
-           <img src="img/education.png" width="20" height="15" alt="Обучение">
-         </article> <!--Закрытие пятого товара -->
+      <article class="Samples_item"> <!--Пятый товар -->
+        <img src="img/education.png" width="20" height="15" alt="Обучение">
+      </article> <!--Закрытие пятого товара -->
 
-         <article class="Samples_item"> <!--Шестой товар -->
-           <img src="img/kvass.png" width="20" height="15" alt="Квас">
-         </article> <!--Закрытие шестого товара -->
+      <article class="Samples_item"> <!--Шестой товар -->
+        <img src="img/kvass.png" width="20" height="15" alt="Квас">
+      </article> <!--Закрытие шестого товара -->
 
 
-       </section class="Samples"> <!--Закрытие Секции Образцов товаров -->
+    </section class="Samples"> <!--Закрытие Секции Образцов товаров -->
 
     <!-- 2.5 Ссылки на следующие страницы Образцов Товаров Pages_Samples -->
-       <div class="Pages_Samples">
+    <div class="Pages_Samples">
 
-         <a class="Pages_Samples Page_One" href="#">1</a>
-         <a class="Pages_Samples Page_Two" href="#">2</a>
-         <a class="Pages_Samples Page_Three" href="#">3</a>
-         <a class="Pages_Samples Page_Next" href="#">СЛЕДУЮЩАЯ</a>
+      <a class="Pages_Samples Page_One" href="#">1</a>
+      <a class="Pages_Samples Page_Two" href="#">2</a>
+      <a class="Pages_Samples Page_Three" href="#">3</a>
+      <a class="Pages_Samples Page_Next" href="#">СЛЕДУЮЩАЯ</a>
 
-       </div> <!--Закрытие ссылок на следующие страницы образцов товаров -->
-
-
-     </main> <!--Закрытие main -->
-
-    <!-- 3 Блок контакты Contacts + карта Map -->
-     <section>
-
-       <div class="Contacts">
-         <h4>NЁRDS DESIGN STUDIO</h4>
-         <br>
-         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <br>
-         <p>тел. +7(812) 275-75-75</p>
-         <br>
-         <a class="btn" href="#">НАПИШИТЕ НАМ</a>
-       </div> <!--Закрытие блока контактов -->
-     </section><!--Закрытие секции контактов -->
+    </div> <!--Закрытие ссылок на следующие страницы образцов товаров -->
 
 
+  </main> <!--Закрытие main -->
 
-    <!-- 4. Подвал footer - основной подвал сайта + класс main_footer -->
-   <footer class="main_footer">
-     <div class="container"> <!--div-Центровщик содержимого подвала container -->
-       <div class="social">
+  <!-- 3 Блок контакты Contacts + карта Map -->
+  <section>
 
-         <!--Ссылки на соцсети -->
-         <!--Пиктограмма - фон. Текст будет скрыт css -->
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    <div class="Contacts">
+      <h4>NЁRDS DESIGN STUDIO</h4>
+      <br>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <br>
+      <p>тел. +7(812) 275-75-75</p>
+      <br>
+      <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+    </div> <!--Закрытие блока контактов -->
+  </section><!--Закрытие секции контактов -->
 
-          <!--Рекламный слоган -->
-          <b class="footer_slogan">Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
 
-        </div> <!--Закрытие социального блока подвала -->
 
-     </div> <!--Закрытие центровщика основного подвала container -->
-   </footer>
+  <!-- 4. Подвал footer - основной подвал сайта + класс main_footer -->
+  <footer class="main_footer">
+    <div class="container"> <!--div-Центровщик содержимого подвала container -->
+      <div class="social">
+
+        <!--Ссылки на соцсети -->
+        <!--Пиктограмма - фон. Текст будет скрыт css -->
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+
+        <!--Рекламный слоган -->
+        <b class="footer_slogan">Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+
+      </div> <!--Закрытие социального блока подвала -->
+
+    </div> <!--Закрытие центровщика основного подвала container -->
+  </footer>
 
   </body>
 </html>
