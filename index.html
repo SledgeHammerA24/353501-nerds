@@ -1,181 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
+ <head>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+ </head>
+ <body>
 
-  <body>
+  <!-- 1. Заголовок header - основная шапка сайта + класс main_header -->
+  <header class="main_header">
+   <div class="container"> <!--div-Центровщик содержимого шапки container -->
 
-    <!-- 1. Заголовок header - основная шапка сайта + класс main_header -->
-    <header class="main_header">
-      <div class="container"> <!--div-Центровщик содержимого шапки container -->
+    <!-- 1.1 Логотип -->
+    <div class="index_logo">
+     <img src="img/index_logo.png" width="20" height="20" alt="Логотип Нёрдс">
+    </div> <!--Закрытие Логотипа -->
 
-        <!-- 1.1 Устройство Логотипа -->
-        <div class="index_logo">
-          <img src="img/index_logo.png" width="20" height="20" alt="Логотип Нёрдс">
-        </div> <!--Закрытие Логотипа -->
+     <!-- 1.2 Меню навигации шапки -->
+     <nav class="main_navigation_list">
+      <ul>
+       <li class="main_navigation_item"><a href="#">Студия</a></li>
+       <li class="main_navigation_item"><a href="#">Клиенты</a></li>
+       <li class="main_navigation_item"><a href="#">Магазин</a></li>
+       <li class="main_navigation_item"><a href="#">Контакты</a></li>
+       </ul> <!--Закрытие Списка Меню навигации шапки -->
+      </nav> <!--Закрытие Меню навигации шапки -->
 
-        <!-- 1.2 Меню навигации шапки -->
-        <nav class="main_navigation">
-          <ul>
-            <li><a href="#">СТУДИЯ</a></li>
-            <li><a href="#">КЛИЕНТЫ</a></li>
-            <li><a href="#">МАГАЗИН</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul> <!--Закрытие Списка Меню навигации шапки -->
-        </nav> <!--Закрытие Меню навигации шапки -->
+      <!-- 1.3 Ссылка Корзина -->
+      <div class="user_block">
+       <a class="login" href="#">Корзина</a>
+      </div> <!--Закрытие Корзины -->
 
-        <!-- 1.3 Ссылка Корзина -->
-        <div class="user_block">
-          <a class="login" href="#">КОРЗИНА</a>
-        </div> <!--Закрытие Корзины -->
+    </div> <!--Закрытие центровщика шапки container -->
+   </header> <!--Закрытие шапки header main -->
 
-      </div> <!--Закрытие центровщика шапки container -->
-     </header> <!--Закрытие шапки header main -->
+  <!-- 2. Раздел main - уникальное содержание страницы + центровщик container -->
+  <main class="container">
 
-    <!-- 2. Раздел main - уникальное содержание страницы + центровщик container -->
-     <main class="container">
+   <!-- 2.1 Предлагаемые услуги Products -->
+   <section class="products">
 
-       <!-- 2.1 Предлагаемые услуги Products -->
-       <section class="Products">
+    <div class="products_item"> <!--Первый товар -->
+     <h2 class="products_item_title">Веб-сайты</h2>
+     <img src="img/websites.png" width="20" height="15" alt="Веб-сайты">
+     <p class="products_item_text">Мир никогда не будет прежним после того как увидит наш сайт!</p>
+     <a class="btn" href="#">ЗАКАЗАТЬ</a>
+    </div> <!--Закрытие первого товара -->
 
-         <div class="Products_item"> <!--Первый товар -->
-           <h3>ВЕБ-САЙТЫ</h3>
+     <div class="Products_item"> <!--Второй товар -->
+      <h2 class="products_item_title">Приложения</h2>
+      <img src="img/applications.png" width="20" height="15" alt="Приложения">
+      <p class="products_item_text">Покорите топ-10 приложений в AppStore и Google Play</p>
+      <a class="btn" href="#">ЗАКАЗАТЬ</a>
+     </div> <!--Закрытие второго товара -->
 
-             <!--Вставка картинки ссылки websites.png на страницу и
-                  Привязка второй страницы макета "Каталог"
-                     к картинке-ссылке websites.png -->
-           <a href="nerds_catalog.html">
-             <img src="img/websites.png" width="20" height="15" alt="Веб-сайты">
-           </a>
+     <div class="Products_item"> <!--Третий товар -->
+      <h2 class="products_item_title">Презентации</h2>
+      <img src="img/presentations.png" width="20" height="15" alt="Презентации">
+      <p class="products_item_text">Вы даже не подозреваете, насколько вы изумительны!</p>
+      <a class="btn" href="#">ЗАКАЗАТЬ</a>
+     </div> <!--Закрытие третьего товара -->
 
-           <p>Мир никогда не будет прежним после того как увидит наш сайт!</p>
-           <a class="btn" href="#">ЗАКАЗАТЬ</a>
-
-         </div> <!--Закрытие первого товара -->
-
-         <div class="Products_item"> <!--Второй товар -->
-           <h3>ПРИЛОЖЕНИЯ</h3>
-           <img src="img/applications.png" width="20" height="15" alt="Приложения">
-           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-           <a class="btn" href="#">ЗАКАЗАТЬ</a>
-         </div> <!--Закрытие второго товара -->
-
-         <div class="Products_item"> <!--Третий товар -->
-           <h3>ПРЕЗЕНТАЦИИ</h3>
-           <img src="img/presentations.png" width="20" height="15" alt="Презентации">
-           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-           <a class="btn" href="#">ЗАКАЗАТЬ</a>
-         </div> <!--Закрытие третьего товара -->
-
-       </section> <!--Закрытие блока с товарами -->
+   </section> <!--Закрытие блока с товарами -->
 
 
-      <!-- 2.2 СамоРеклама Presentation -->
-       <section>
-         <div class="Presentation">
+   <!-- 2.2 СамоРеклама Presentation -->
+   <section>
+    <div class="presentation">
 
-           <div class="Presentation_LeftSide"> <!-- 2.2.1 Часть слева -->
-             <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-             <br>
-             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы</p>
-             <br>
-             <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
-             <p>Веб-сайтов любой сложности</p>
-             <p>Мобильных приложений для iOS и Android</p>
-             <p>Слайдшоу и видео для корпоративных презентаций</p>
-           </div> <!--Закрытие презентации слева -->
+     <div class="presentation_left"> <!-- 2.2.1 Часть слева -->
+      <p class="presentation_text"><b class="about_us">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="presentation_text">Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы</p>
+      <p class="presentation_title"><b class="customer_offer">Выполняем заказы на разработку:</p>
+       <ul>
+        <li class="customer_offer_item">
+         <p class="presentation_item_text">Веб-сайтов любой сложности</p>
+        </li>
+        <li class="customer_offer_item">
+         <p class="presentation_item_text">Мобильных приложений для iOS и Android</p>
+        </li>
+        <li class="customer_offer_item">
+         <p class="presentation_item_text">Слайдшоу и видео для корпоративных презентаций</p>
+        </li>
+     </div> <!--Закрытие презентации слева -->
 
-           <div class="Presentation_RightSide"> <!--2.2.2 Часть справа -->
+     <div class="presentation_right"> <!--2.2.2 Часть справа -->
 
-             <div class="index_logo"> <!-- 2.2.2.1 Устройство второго Логотипа -->
-               <img src="img/index_logo2.png" width="30" height="30" alt="Логотип Нёрдс 2">
-             </div> <!--Закрытие второго Логотипа -->
+      <div class="index_logo"> <!-- 2.2.2.1 Устройство второго Логотипа -->
+       <img src="img/index_logo2.png" width="30" height="30" alt="Логотип Нёрдс 2">
+      </div> <!--Закрытие второго Логотипа -->
 
-             <!--2.2.2.2 Таблица с процентами -->
-             <table>
-               <tr>
-                 <th colspan="3">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ:</th>
-        <!--     <th>..</th>
-                 <th>..</th>
-        -->
-               </tr>
-               <tr>
-                 <td>146<sup>%</sup></td>
-                 <td>100<sup>%</sup></td>
-                 <td>50<sup>%</sup></td>
-               </tr>
-               <tr>
-                 <td>Уровень самоотдачи</td>
-                 <td>Соблюдение сроков</td>
-                 <td>Минимальная предоплата</td>
-               </tr>
-            </table>
+      <!--2.2.2.2 Таблица с процентами -->
+      <table>
+       <tr>
+        <th colspan="3">С 2004 года любим точность во всём:</th>
+  <!--  <th>..</th>
+        <th>..</th>
+   -->
+       </tr>
+       <tr>
+        <td>146<sup>%</sup></td>
+        <td>100<sup>%</sup></td>
+        <td>50<sup>%</sup></td>
+       </tr>
+       <tr>
+        <td>Уровень самоотдачи</td>
+        <td>Соблюдение сроков</td>
+        <td>Минимальная предоплата</td>
+       </tr>
+      </table>
 
-          </div> <!--Закрытие презентации справа -->
+     </div> <!--Закрытие презентации справа -->
 
-        </div> <!--Закрытие саморекламы -->
-      </section>
+    </div> <!--Закрытие саморекламы -->
+   </section>
 
-     <!-- 2.3 Блок Логотипы Партнёров Partners -->
-      <section>
+   <!-- 2.3 Блок Логотипы Партнёров Partners -->
+   <section>
 
-          <div class="partner_logo"> <!--Партнёр html-academy -->
-            <img src="img/index_part_logo_htmlac.png" width="30" height="30" alt="html academy">
-          </div> <!--Закрытие партнёра  html-academy -->
+    <div class="partner_logo"> <!--Партнёр html-academy -->
+     <img src="img/index_part_logo_htmlac.png" width="30" height="30" alt="html academy">
+    </div> <!--Закрытие партнёра  html-academy -->
 
-          <div class="partner_logo"> <!--Партнёр Barbershop BORODINSKI -->
-            <img src="img/index_part_logo_barbshop.png" width="30" height="30" alt="Barbershop BORODINSKI">
-          </div> <!--Закрытие партнёра  Barbershop BORODINSKI -->
+    <div class="partner_logo"> <!--Партнёр Barbershop BORODINSKI -->
+     <img src="img/index_part_logo_barbshop.png" width="30" height="30" alt="Barbershop BORODINSKI">
+    </div> <!--Закрытие партнёра  Barbershop BORODINSKI -->
 
-          <div class="partner_logo"> <!--Партнёр glasses PINK -->
-            <img src="img/index_part_logo_glasses_PINK.png" width="30" height="30" alt="glasses PINK">
-          </div> <!--Закрытие партнёра  glasses PINK -->
+    <div class="partner_logo"> <!--Партнёр glasses PINK -->
+     <img src="img/index_part_logo_glasses_PINK.png" width="30" height="30" alt="glasses PINK">
+    </div> <!--Закрытие партнёра  glasses PINK -->
 
-          <div class="partner_logo"> <!--Партнёр MiSHKA -->
-            <img src="img/index_part_logo_MiSHKA.png" width="30" height="30" alt="MiSHKA">
-          </div> <!--Закрытие партнёра  MiSHKA -->
+    <div class="partner_logo"> <!--Партнёр MiSHKA -->
+     <img src="img/index_part_logo_MiSHKA.png" width="30" height="30" alt="MiSHKA">
+    </div> <!--Закрытие партнёра  MiSHKA -->
 
-        </section> <!--Закрытие секции партнёров -->
+   </section> <!--Закрытие секции партнёров -->
 
-     </main> <!--Закрытие main -->
+  </main> <!--Закрытие main -->
 
-    <!-- 3 Блок контакты Contacts + карта Map -->
-     <section>
+  <!-- 3 Блок контакты Contacts + карта Map -->
+  <section>
 
-       <div class="Contacts">
-         <h4>NЁRDS DESIGN STUDIO</h4>
-         <br>
-         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <br>
-         <p>тел. +7(812) 275-75-75</p>
-         <br>
-         <a class="btn" href="#">НАПИШИТЕ НАМ</a>
-       </div> <!--Закрытие блока контактов -->
-     </section><!--Закрытие секции контактов -->
+   <div class="contacts">
+    <h3 class="contacts_title">NЁRDS DESIGN STUDIO</h3>
+    <p class="contacts_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <p class="contacts_text">тел. +7(812) 275-75-75</p>
+    <a class="btn" href="#">Напишите нам</a>
+   </div> <!--Закрытие блока контактов -->
+  </section><!--Закрытие секции контактов -->
 
+  <!-- 4. Подвал footer - основной подвал сайта + класс main_footer -->
+  <footer class="main_footer">
+   <div class="container"> <!--div-Центровщик содержимого подвала container -->
 
+    <div class="social">
 
-    <!-- 4. Подвал footer - основной подвал сайта + класс main_footer -->
-   <footer class="main_footer">
-     <div class="container"> <!--div-Центровщик содержимого подвала container -->
-       <div class="social">
+     <!--Ссылки на соцсети -->
+     <!--Пиктограмма - фон. Текст будет скрыт css -->
+     <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+     <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+     <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
 
-         <!--Ссылки на соцсети -->
-         <!--Пиктограмма - фон. Текст будет скрыт css -->
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+     <!--Рекламный слоган -->
+     <b class="footer_slogan">Давайте дружить, это выгодно!</b>
+     <p class="footer_text">Скидка 10% для друзей из социальных сетей.</p>
 
-          <!--Рекламный слоган -->
-          <b class="footer_slogan">Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div> <!--Закрытие социального блока подвала -->
 
-        </div> <!--Закрытие социального блока подвала -->
+   </div> <!--Закрытие центровщика основного подвала container -->
+  </footer>
 
-     </div> <!--Закрытие центровщика основного подвала container -->
-   </footer>
-
-  </body>
+ </body>
 </html>
