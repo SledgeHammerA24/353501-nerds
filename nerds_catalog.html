@@ -65,54 +65,52 @@
 
      <div class="price_filter"> <!-- 2.3.1 Ценовой бегунок -->
       <h3 class="price_filter_title">Стоимость:</h3>
+      <div class="price_filter"></div>
      </div> <!--Закрытие Ценового бегунка -->
 
      <fieldset class="pattern_form"> <!-- 2.3.2.1 фильтр "Сетка" в виде формы радиобаттонов -->
       <legend class="form_title">Сетка:</legend>
 
-      <label class="pattern_form_text">
+      <label class="pattern_form_radio">
        <input type="radio" name="Features" value="Адаптивная" checked>
       </label>
-
-      <label class="pattern_form_text">
+      <label class="pattern_form_radio">
        <input type="radio" name="Features" value="Фиксированная">
+       <span class="pattern_form_text"> Адаптивная </span>
       </label>
-
-      <label class="pattern_form_text">
+      <label class="pattern_form_radio">
        <input type="radio" name="Features" value="Резиновая">
       </label>
     </fieldset> <!--Закрытие Блока фильтр "Сетка" -->
 
      <fieldset class="particularity_form"> <!-- 2.3.2.2 фильтр "Особенности" в виде формы чекбоксов -->
       <legend class="form_title">Особенности:</legend>
-      <ul>
-       <li class="particularity_form_text">
-        <input type="checkbox" name="slider" id="slider_field" checked>
-        <label for="slider-field">Слайдер</label>
-       </li>
-       <li class="particularity_form_text">
-        <input type="checkbox" name="advantages" id="advantages_field">
-        <label for="advantages_field">Блок преимуществ</label>
-       </li>
-       <li class="particularity_form_text">
-        <input type="checkbox" name="news" id="news_field" checked>
-        <label for="news_field">Новости</label>
-       </li>
-       <li class="particularity_form_text">
-        <input type="checkbox" name="gallery" id="gallery_field" checked>
-        <label for="gallery_field">Галерея</label>
-       </li>
-       <li class="particularity_form_text">
-        <input type="checkbox" name="bascket" id="bascket_field">
-        <label for="bascket_field">Корзина</label>
-       </li>
-      </ul> <!--Закрытие Списка фильтра Особенности -->
+
+      <label class="pattern_form_checkbox">
+       <input type="checkbox" name="slider" checked>
+       <span class="pattern_form_text">Слайдер</span>
+      </label>
+      <label class="pattern_form_checkbox">
+       <input type="checkbox" name="advantages">
+       <span class="pattern_form_text">Блок преимуществ</span>
+      </label>
+      <label>
+       <input type="checkbox" name="news" checked>
+       <span class="pattern_form_text">Новости</span>
+      </label>
+      <label>
+        <input type="checkbox" name="gallery" checked>
+        <span class="pattern_form_text">Галерея</span>
+      </label>
+      <label>
+        <input type="checkbox" name="bascket">
+        <span class="pattern_form_text">Корзина</span>
+      </label>
      </fieldset> <!--Закрытие Блока фильтр "Особенности" -->
 
      <input type="submit" value="Показать"> <!-- 2.3.2.3 кнопка "ПОКАЗАТЬ" в виде формы -->
 
     </form>
-
    </section> <!--Закрытие Секции Фильтров -->
 
 
@@ -120,63 +118,49 @@
    <section class="samples">
 
     <article class="samples_item"> <!--Первый товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/sedona.png" width="20" height="15" alt="Sedona">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие первого товара -->
 
     <article class="samples_item"> <!--Второй товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/pink.png" width="20" height="15" alt="Pink">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие второго товара -->
 
     <article class="samples_item"> <!--Третий товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/borodinski.png" width="20" height="15" alt="Barbershop">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие третьего товара -->
 
     <article class="samples_item"> <!--Четвёртый товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/mishka.png" width="20" height="15" alt="Mishka">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие Четвёртого товара -->
 
     <article class="samples_item"> <!--Пятый товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/education.png" width="20" height="15" alt="Обучение">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие пятого товара -->
 
     <article class="samples_item"> <!--Шестой товар -->
-     <div class="samples_head">
-     </div>
+     <div class="samples_head"></div>
      <img src="img/kvass.png" width="20" height="15" alt="Квас">
-     <div class="samples_popup">
-     </div>
+     <div class="samples_popup"></div>
     </article> <!--Закрытие шестого товара -->
 
   </section> <!--Закрытие Секции Образцов товаров -->
 
    <!-- 2.5 Ссылки на следующие страницы Образцов Товаров pagination -->
    <div class="pagination">
-
-    <a class="pagination page_1_3" href="#">1</a>
-    <a class="pagination page_1_3" href="#">2</a>
-    <a class="pagination page_1_3" href="#">3</a>
-    <a class="pagination Page_Next" href="#">Следующая</a>
-
+    <a class="pagination_page" href="#">1</a>
+    <a class="pagination_page" href="#">2</a>
+    <a class="pagination_page" href="#">3</a>
+    <a class="pagination_page_next" href="#">Следующая</a>
    </div> <!--Закрытие ссылок на следующие страницы образцов товаров -->
 
   </main> <!--Закрытие main -->
@@ -184,7 +168,7 @@
   <!-- 3 Блок контакты Contacts + карта Map -->
   <section>
 
-   <div class="Contacts">
+   <div class="contacts">
     <h3 class="contacts_title">NЁRDS DESIGN STUDIO</h3>
     <p class="contacts_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <p class="contacts_text">тел. +7(812) 275-75-75</p>
